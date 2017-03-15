@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            Supervillian Staffing Services
+            Supervillian Staffing Services - Store
         </title>
     </head>
     <body>
