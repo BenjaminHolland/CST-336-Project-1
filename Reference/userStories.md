@@ -1,5 +1,7 @@
 As a villain, I wanted to find some affordable henchmen so through the Villian webpage I was able to do that by going to the products page found a list of the types of henchmen. I found the ones right for me through the descriptions given for each type of henchmen and I added the quantity I wanted to my shopping cart through a text box that took a value.
 
+As a villain, I wanted to find some affordable henchmen so through the Villian webpage I was able to do that by going to the products page and sorting the products on the site by "Henchmen" and I got a list of the various types of henchmen available. I found the ones right for me through the descriptions given for each type of henchmen and I added the quantity I wanted to my shopping cart through a text box that took a value.
+
 Looking for henchmen I stumbled upon the Villian webpage and was able to find what I needed through the sort by "rate" on the henchmen page. I was happy to see that I was able to put all the types of henchmen I wanted in my cart, but after I was still able to sort the page again in order to find other types of henchmen that I wanted.
 
 While looking for particular types of henchmen I liked the fact that the Villian webpage was able to sort all the villans by "rate" but my time would have been shortened if there was a sub sort list that allowed me to sort the henchmen by height and weight since I wanted them to a uniform body type.
