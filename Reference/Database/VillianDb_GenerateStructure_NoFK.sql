@@ -92,7 +92,6 @@ CREATE TABLE IF NOT EXISTS `OrderStatus` (
   PRIMARY KEY (`OrderStatusId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
 
 --
 -- Table structure for table `Villian`
@@ -103,6 +102,18 @@ CREATE TABLE IF NOT EXISTS `Villian` (
   `Name` varchar(128) NOT NULL,
   `Address` varchar(1024) NOT NULL,
   PRIMARY KEY (`VillianId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Speciality`
+--
+
+CREATE TABLE IF NOT EXISTS `Speciality` (
+  `SpecialityId` int(11) NOT NULL,
+  `Description` varchar(1024) NOT NULL,
+  PRIMARY KEY (`SpecialityId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
