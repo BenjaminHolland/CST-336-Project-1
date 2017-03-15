@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `Henchperson` (
 --
 
 CREATE TABLE IF NOT EXISTS `HenchpersonStatus` (
-  `SpecialityId` int(11) NOT NULL,
+  `HenchpersonStatusId` int(11) NOT NULL,
   `Description` varchar(1024) NOT NULL,
   PRIMARY KEY (`SpecialityId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
