@@ -8,7 +8,7 @@
 -- PHP Version: 7.0.15-1+deb.sury.org~trusty+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "00:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `Henchperson` (
 CREATE TABLE IF NOT EXISTS `HenchpersonStatus` (
   `HenchpersonStatusId` int(11) NOT NULL,
   `Description` varchar(1024) NOT NULL,
-  PRIMARY KEY (`SpecialityId`)
+  PRIMARY KEY (`HenchpersonStatusId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `OrderLine` (
   `HenchpersonId` int(11) NOT NULL,
   PRIMARY KEY (`OrderLineId`),
   KEY `OrderId` (`OrderId`),
-  KEY `HenchpersonId` (`HenchpersonId`))
+  KEY `HenchpersonId` (`HenchpersonId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
