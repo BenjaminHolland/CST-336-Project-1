@@ -3,8 +3,8 @@
 
 CREATE TABLE "Villian" (
     "VillianId" int  NOT NULL ,
-    "Name" string  NOT NULL ,
-    "Address" string  NOT NULL ,
+    "Name" varchar(128) NOT NULL ,
+    "Address" varchar(1024)  NOT NULL ,
     CONSTRAINT "pk_Villian" PRIMARY KEY (
         "VillianId"
     )
