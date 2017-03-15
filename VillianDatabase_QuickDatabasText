@@ -1,0 +1,63 @@
+# For use with https://app.quickdatabasediagrams.com/#/
+# Modify the code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+
+Villian
+-
+VillianId PK int
+Name string
+Address string
+
+Order
+--
+OrderId PK int
+VillianIdId int FK >- Villian.VillianId
+OrderStatusId int FK >- os.OrderStatusID
+
+OrderLine as ol
+----
+OrderLineId PK int
+OrderId int FK >- Order.OrderId
+HenchpersonId int FK >- h.HenchpersonId
+
+Henchperson as h
+------------
+HenchpersonId PK int
+Name varchar(200)
+Description varchar(1024)
+RatePerHour money
+HenchersonStatusId int FK >- hs.HenchpersonStatusId 
+SpecialityId int FK >- s.SpecialityId
+
+Speciality as s
+------------
+SpecialityId PK int
+Description varchar(1024)
+
+HenchpersonStatus as hs
+------------
+HenchpersonStatusId PK int
+Description varchar(64)
+
+OrderStatus as os
+----
+OrderStatusID PK int
+Name string
+
+[settings]
+Position 47 57
+Zoom 100
+DefaultFieldType int
+CaseSensitive on
+
+[layout]
+Order 701 65
+Villian 1017 90
+OrderStatus 707 211
+Henchperson 128 92
+OrderLine 445 41
+HenchpersonStatus 108 480
+
+Speciality 135 364
