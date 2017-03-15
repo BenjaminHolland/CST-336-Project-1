@@ -3,12 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2017 at 05:39 PM
+-- Generation Time: Mar 15, 2017 at 05:54 PM
 -- Server version: 5.5.53-0ubuntu0.14.04.1
 -- PHP Version: 7.0.15-1+deb.sury.org~trusty+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "-08:00";
+SET time_zone = "00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,7 +33,9 @@ CREATE TABLE IF NOT EXISTS `Henchperson` (
   `RatePerHour` decimal(10,0) NOT NULL,
   `HenchpersonStatusId` int(11) NOT NULL,
   `SpecialityId` int(11) NOT NULL,
-  PRIMARY KEY (`HenchpersonId`)
+  PRIMARY KEY (`HenchpersonId`),
+  KEY `HenchpersonStatusId` (`HenchpersonStatusId`),
+  KEY `SpecialityId` (`SpecialityId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -58,7 +60,9 @@ CREATE TABLE IF NOT EXISTS `Order` (
   `OrderId` int(11) NOT NULL,
   `VillianId` int(11) NOT NULL,
   `OrderStatusId` int(11) NOT NULL,
-  PRIMARY KEY (`OrderId`)
+  PRIMARY KEY (`OrderId`),
+  KEY `VillianId` (`VillianId`),
+  KEY `OrderStatusId` (`OrderStatusId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -71,7 +75,9 @@ CREATE TABLE IF NOT EXISTS `OrderLine` (
   `OrderLineId` int(11) NOT NULL,
   `OrderId` int(11) NOT NULL,
   `HenchpersonId` int(11) NOT NULL,
-  PRIMARY KEY (`OrderLineId`)
+  PRIMARY KEY (`OrderLineId`),
+  KEY `OrderId` (`OrderId`),
+  KEY `HenchpersonId` (`HenchpersonId`))
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
