@@ -65,7 +65,7 @@ WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id
             foreach($result as $henchperson){
                 
                 $skills=$this->getSpecialitiesForHenchperson($henchperson['Id']);
-                $model=new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills);
+                $model=new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills,true);
                 array_push($return,$model);
             }
             return $return;
