@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2017 at 08:55 PM
+-- Generation Time: Mar 25, 2017 at 11:37 PM
 -- Server version: 5.5.53-0ubuntu0.14.04.1
 -- PHP Version: 7.0.15-1+deb.sury.org~trusty+1
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `VDB`
+-- Database: `VillianDb`
 --
 
 -- --------------------------------------------------------
@@ -38,21 +38,16 @@ CREATE TABLE IF NOT EXISTS `Contract` (
   PRIMARY KEY (`Id`),
   KEY `VillianId` (`VillianId`,`HenchpersonId`),
   KEY `HenchpersonId` (`HenchpersonId`),
-  KEY `ContractStatusId` (`ContractStatusId`),
-  
+  KEY `ContractStatusId` (`ContractStatusId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Truncate table before insert `Contract`
---
-
-TRUNCATE TABLE `Contract`;
 --
 -- Dumping data for table `Contract`
 --
 
-INSERT INTO `Contract` (`Id`, `VillianId`, `HenchpersonId`, `WhenOpened`, `ContractStatusId`) VALUES
-(0, 0, 1, '2017-03-25 20:44:03', 1);
+INSERT INTO `Contract` (`Id`, `VillianId`, `HenchpersonId`, `WhenOpened`, `ContractStatusId`, `Salary`) VALUES
+(0, 0, 1, '2017-03-25 20:44:03', 1, '0.00'),
+(2, 0, 0, '2017-03-25 21:54:17', 0, '0.00');
 
 -- --------------------------------------------------------
 
@@ -67,11 +62,6 @@ CREATE TABLE IF NOT EXISTS `ContractStatus` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Truncate table before insert `ContractStatus`
---
-
-TRUNCATE TABLE `ContractStatus`;
 --
 -- Dumping data for table `ContractStatus`
 --
@@ -95,11 +85,6 @@ CREATE TABLE IF NOT EXISTS `Henchperson` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Truncate table before insert `Henchperson`
---
-
-TRUNCATE TABLE `Henchperson`;
---
 -- Dumping data for table `Henchperson`
 --
 
@@ -122,11 +107,6 @@ CREATE TABLE IF NOT EXISTS `HenchpersonSpeciality` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Truncate table before insert `HenchpersonSpeciality`
---
-
-TRUNCATE TABLE `HenchpersonSpeciality`;
---
 -- Dumping data for table `HenchpersonSpeciality`
 --
 
@@ -147,11 +127,6 @@ CREATE TABLE IF NOT EXISTS `Speciality` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Truncate table before insert `Speciality`
---
-
-TRUNCATE TABLE `Speciality`;
 --
 -- Dumping data for table `Speciality`
 --
@@ -179,11 +154,6 @@ CREATE TABLE IF NOT EXISTS `Villian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Truncate table before insert `Villian`
---
-
-TRUNCATE TABLE `Villian`;
---
 -- Dumping data for table `Villian`
 --
 
@@ -201,9 +171,9 @@ INSERT INTO `Villian` (`Id`, `NamePrefix`, `NameFirst`, `NameLast`, `NameSuffix`
 -- Constraints for table `Contract`
 --
 ALTER TABLE `Contract`
-  ADD CONSTRAINT `Contract_ibfk_3` FOREIGN KEY (`ContractStatusId`) REFERENCES `ContractStatus` (`Id`),
   ADD CONSTRAINT `Contract_ibfk_1` FOREIGN KEY (`VillianId`) REFERENCES `Villian` (`Id`),
-  ADD CONSTRAINT `Contract_ibfk_2` FOREIGN KEY (`HenchpersonId`) REFERENCES `Henchperson` (`Id`);
+  ADD CONSTRAINT `Contract_ibfk_2` FOREIGN KEY (`HenchpersonId`) REFERENCES `Henchperson` (`Id`),
+  ADD CONSTRAINT `Contract_ibfk_3` FOREIGN KEY (`ContractStatusId`) REFERENCES `ContractStatus` (`Id`);
 
 --
 -- Constraints for table `HenchpersonSpeciality`
