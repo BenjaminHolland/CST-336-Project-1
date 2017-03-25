@@ -12,44 +12,25 @@
             }
         }
         
-        public function nextContractId(){
-            $text="SELECT Max(Id) FROM Contract";
-            return $connection->query($text)->fetch()+1;
-        }
-        
-        /**
-         * Opens a contract;
-         */
-        public function openContract($villianId,$henchpersonId,$salary){
+        public function getHenchmenForVillian($Id){
             $text=
 "
-INSERT INTO Contract(Id,VillianId,HenchpersonId,WhenOpened,ContractStatusId,Salary)
-VALUES (:Id,:VID,:HID,UTC_TIMESTAMP,0,:Salary);
+SELECT Henchperson.Id AS Id,Henchperson.Title AS Name,Henchperson.Description AS Description
+FROM Contract
+JOIN Villian ON Contract.VillianId=Villian.Id
+JOIN Henchperson ON Contract.HenchpersonId=Henchperson.Id
+WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id;
 ";
-            $statement=$this->prepare($text);
-            $statement->bindParam(":Id",nextContractId());
-            $statement->bindParam(":VID",$villianId);
-            $statement->bindParam(":HID",$henchpersonId);
-            $statement->bindParam(":Salary",$salary);
+            $statement=$this->connection->prepare($text);
+            $statement->bindParam(":Id",$Id);
             $statement->execute();
+            $return=[];
+            foreach($statement->fetchAll() as $record){
+                $skills=getSpecialitiesForHenchperson($record["Id"]);
+                array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills,true));
+            }
+            return $return;
         }
-        
-        /**
-         * Closes a contract
-         */
-        public function closeContract($id){
-            $text=
-"
-UPDATE Contract
-SET ContractStatusId=1
-WHERE Id=:Id;
-";        
-            $statement=$this->prepare($text);
-            $statement->bindParam(":Id",$id);
-            $statement->execute();
-            
-        }
-        
         /**
          * Returns a list of skills for a specified henchperson.
          */
