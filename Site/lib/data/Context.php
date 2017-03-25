@@ -12,7 +12,7 @@
             }
         }
         
-        public function getHenchmenForVillian($Id){
+        public function getHenchpeopleForVillian($Id){
             $text=
 "
 SELECT Henchperson.Id AS Id,Henchperson.Title AS Name,Henchperson.Description AS Description
@@ -27,7 +27,7 @@ WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id;
             $return=[];
             foreach($statement->fetchAll() as $record){
                 $skills=getSpecialitiesForHenchperson($record["Id"]);
-                array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills,true));
+                array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills,false));
             }
             return $return;
         }
