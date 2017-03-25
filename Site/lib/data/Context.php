@@ -12,6 +12,44 @@
             }
         }
         
+        public function nextContractId(){
+            $text="SELECT Max(Id) FROM Contract";
+            return $connection->query($text)->fetch()+1;
+        }
+        
+        /**
+         * Opens a contract;
+         */
+        public function openContract($villianId,$henchpersonId,$salary){
+            $text=
+"
+INSERT INTO Contract(Id,VillianId,HenchpersonId,WhenOpened,ContractStatusId,Salary)
+VALUES (:Id,:VID,:HID,UTC_TIMESTAMP,0,:Salary);
+";
+            $statement=$this->prepare($text);
+            $statement->bindParam(":Id",nextContractId());
+            $statement->bindParam(":VID",$villianId);
+            $statement->bindParam(":HID",$henchpersonId);
+            $statement->bindParam(":Salary",$salary);
+            $statement->execute();
+        }
+        
+        /**
+         * Closes a contract
+         */
+        public function closeContract($id){
+            $text=
+"
+UPDATE Contract
+SET ContractStatusId=1
+WHERE Id=:Id;
+";        
+            $statement=$this->prepare($text);
+            $statement->bindParam(":Id",$id);
+            $statement->execute();
+            
+        }
+        
         public function getVillians(){
             $text=
 
@@ -49,7 +87,6 @@ WHERE hs.HenchpersonId=:Id
         /**
          * Retrieves a list of Henchpeople that are available for hire
          */
-         
         public function getAvailableHenchpeople(){
             $text=
 "
