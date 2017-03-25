@@ -34,10 +34,12 @@ CREATE TABLE IF NOT EXISTS `Contract` (
   `HenchpersonId` int(11) NOT NULL,
   `WhenOpened` datetime NOT NULL,
   `ContractStatusId` int(11) NOT NULL,
+  `Salary` decimal(11,2) NOT NULL,
   PRIMARY KEY (`Id`),
   KEY `VillianId` (`VillianId`,`HenchpersonId`),
   KEY `HenchpersonId` (`HenchpersonId`),
-  KEY `ContractStatusId` (`ContractStatusId`)
+  KEY `ContractStatusId` (`ContractStatusId`),
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

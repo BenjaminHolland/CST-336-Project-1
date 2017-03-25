@@ -24,6 +24,10 @@ FROM Villian
             $result=$statement->fetchAll();
             return $result;
         }
+        
+        /**
+         * Returns a list of skills for a specified henchperson.
+         */
         public function getSpecialitiesForHenchperson($Id){
             $text=
 "
@@ -40,7 +44,12 @@ WHERE hs.HenchpersonId=:Id
                 array_push($return,$record["Description"]);
             }
             return $return;
-        }        
+        }
+        
+        /**
+         * Retrieves a list of Henchpeople that are available for hire
+         */
+         
         public function getAvailableHenchpeople(){
             $text=
 "
@@ -48,7 +57,6 @@ SELECT *
 FROM Henchperson
 WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id AND Contract.ContractStatusId=1)=0
 ";
-
 
             $statement=$this->connection->prepare($text);
             $statement->execute();
