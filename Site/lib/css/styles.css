@@ -1,0 +1,49 @@
+.parentDiv
+{
+    height:auto;
+    overflow: hidden;
+    display: flex;
+}
+.sidebarContainer
+{
+    float: left;
+    width:15%;
+}
+
+.sidebar {
+    padding: 5px;
+}
+
+.contentContainer
+{
+    border-left: 3px solid black;
+    float: right;
+    width:84%;
+}
+
+.content {
+    padding: 5px;
+}
+
+body {
+    background-color: #501E81;
+}
+
+.header {
+    border-bottom: 3px solid black;
+}
+
+.main {
+    border: 5px solid black;
+    background-color: #97D0AF;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer {
+    border-top: 3px solid black;
+}
+
+.center {
+    text-align: center;
+}
