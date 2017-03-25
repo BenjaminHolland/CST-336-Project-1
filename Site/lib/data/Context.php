@@ -50,19 +50,6 @@ WHERE Id=:Id;
             
         }
         
-        public function getVillians(){
-            $text=
-
-"
-SELECT *
-FROM Villian
-";
-            $statement=$this->connection->prepare($text);
-            $statement->execute();
-            $result=$statement->fetchAll();
-            return $result;
-        }
-        
         /**
          * Returns a list of skills for a specified henchperson.
          */
@@ -94,7 +81,6 @@ SELECT *
 FROM Henchperson
 WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id AND Contract.ContractStatusId=1)=0
 ";
-
             $statement=$this->connection->prepare($text);
             $statement->execute();
             $result=$statement->fetchAll();
