@@ -1,8 +1,9 @@
 <?php
+
     class VillianModel{
+        public $VillianId;
         public $Name;
         public $Address;
-        public $VillianId;
     }
     
     class OrderModel{
