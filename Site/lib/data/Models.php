@@ -9,10 +9,10 @@
     public $DropzoneLon;
     public $DropzoneLat;
     public function getFullName(){
-      return $NamePrefix." ".$FirstName." ".$LastName." ".$NameSuffix;
+      return $this->NamePrefix." ".$this->FirstName." ".$this->LastName." ".$this->NameSuffix;
     }
     public function __construct($id,$prefix,$first,$last,$suffix,$lat,$lon){
-      $this->Id=id;
+      $this->Id=$id;
       $this->NamePrefix=$prefix;
       $this->FirstName=$first;
       $this->LastName=$last;

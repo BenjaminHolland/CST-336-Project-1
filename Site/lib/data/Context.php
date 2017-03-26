@@ -71,10 +71,10 @@ WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id
             $return=[];
             
             //Loop through each selected henchperson
-            foreach($statement->fetchAll() as $record){
+            foreach($statement->fetchAll() as $henchperson){
                 
                 //Get an array of skills for the henchperson.
-                $skills=getSpecialitiesForHenchperson($record["Id"]);
+                $skills=$this->getSpecialitiesForHenchperson($henchperson["Id"]);
                 
                 //Push a new henchperson model into the array.
                 array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Name'],$henchperson['Description'],$skills,false));
@@ -95,7 +95,7 @@ ORDER BY NameFirst DESC;
             $statement->execute();
             $return=[];
             foreach($statement->fetchAll() as $record){
-                array_push($return,new VillianRecord(
+                array_push($return,new VillianModel(
                     $record['Id'],
                     $record['NamePrefix'],
                     $record['NameFirst'],
