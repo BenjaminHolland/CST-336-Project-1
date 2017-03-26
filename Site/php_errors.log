@@ -8,3 +8,64 @@ Stack trace:
 [26-Mar-2017 22:46:44 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/testing/test.php on line 6
 [26-Mar-2017 22:46:44 UTC] PHP Stack trace:
 [26-Mar-2017 22:46:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/testing/test.php:0
+[26-Mar-2017 23:12:55 UTC] PHP Parse error:  syntax error, unexpected '$henchpeople' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 36
+[26-Mar-2017 23:13:41 UTC] PHP Fatal error:  Uncaught Error: Class 'VillianRecord' not found in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:98
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(21): Context->getVillians()
+#1 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 98
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 15
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 15
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 15
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 15
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:14:40 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NamePrefix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: FirstName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: LastName in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:15:14 UTC] PHP Notice:  Undefined variable: NameSuffix in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Models.php on line 12
+[26-Mar-2017 23:21:47 UTC] PHP Warning:  Missing argument 1 for Context::getAvailableHenchpeople(), called in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 44 and defined in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 137
+[26-Mar-2017 23:21:47 UTC] PHP Notice:  Undefined variable: henchOrder in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 145
+[26-Mar-2017 23:21:47 UTC] PHP Notice:  Undefined variable: henchOrder in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 148
+[26-Mar-2017 23:21:47 UTC] PHP Notice:  Undefined variable: henchOrder in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 151
+[26-Mar-2017 23:21:47 UTC] PHP Notice:  Undefined property: HenchpersonModel::$skills in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:21:47 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:22:03 UTC] PHP Notice:  Undefined property: HenchpersonModel::$skills in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:22:03 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:22:20 UTC] PHP Notice:  Undefined property: HenchpersonModel::$Skills in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:22:20 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 49
+[26-Mar-2017 23:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getSpecialitiesForHenchperson() in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(65): Context->getHenchpeopleForVillian('0', 1)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 77
+[26-Mar-2017 23:28:08 UTC] PHP Notice:  Undefined variable: henchperson in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 80
+[26-Mar-2017 23:28:08 UTC] PHP Notice:  Undefined variable: henchperson in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 80
+[26-Mar-2017 23:28:08 UTC] PHP Notice:  Undefined variable: henchperson in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 80
+[26-Mar-2017 23:28:50 UTC] PHP Notice:  Undefined variable: record in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 77
