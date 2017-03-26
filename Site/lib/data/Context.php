@@ -2,6 +2,9 @@
     include 'Models.php';
     class Context{
         
+        public const HENCH_ORDER_BY_ID=1;
+        public const HENCH_ORDER_BY_TITLE=2;
+        public const HENCH_ORDER_BY_SKILL_COUNT=3;
         private $connection;
         function __construct(){
             try {
@@ -12,22 +15,33 @@
             }
         }
         
-        public function getHenchpeopleForVillian($Id){
+        public function getHenchpeopleForVillian($Id,$henchOrder){
             $text=
 "
 SELECT Henchperson.Id AS Id,Henchperson.Title AS Name,Henchperson.Description AS Description
 FROM Contract
 JOIN Villian ON Contract.VillianId=Villian.Id
 JOIN Henchperson ON Contract.HenchpersonId=Henchperson.Id
-WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id;
+WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id
 ";
+            switch($henchOrder){
+                case Context::HENCH_ORDER_BY_ID:
+                    $text.="ORDER BY Henchperson.Id";
+                    break;
+                case Context::ORDER_BY_TITLE:
+                    $text.="ORDER BY Henchperson.Title";
+                    break;
+                case Context::ORDER_BY_SKILL_COUNT:
+                    $text.="ORDER BY (SELECT COUNT(*) FROM HenchpersonSpeciality WHERE HenchpersonSpeciality.HenchpersonId=Henchperson.Id)";
+                    break;
+            }
             $statement=$this->connection->prepare($text);
             $statement->bindParam(":Id",$Id);
             $statement->execute();
             $return=[];
             foreach($statement->fetchAll() as $record){
                 $skills=getSpecialitiesForHenchperson($record["Id"]);
-                array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Title'],$henchperson['Description'],$skills,false));
+                array_push($return, new HenchpersonModel($henchperson['Id'],$henchperson['Name'],$henchperson['Description'],$skills,false));
             }
             return $return;
         }
@@ -55,13 +69,24 @@ WHERE hs.HenchpersonId=:Id
         /**
          * Retrieves a list of Henchpeople that are available for hire
          */
-        public function getAvailableHenchpeople(){
+        public function getAvailableHenchpeople($henchOrder){
             $text=
 "
 SELECT *
 FROM Henchperson
 WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id AND Contract.ContractStatusId=1)=0
 ";
+            switch($henchOrder){
+                case Context::HENCH_ORDER_BY_ID:
+                    $text.="ORDER BY Henchperson.Id";
+                    break;
+                case Context::ORDER_BY_TITLE:
+                    $text.="ORDER BY Henchperson.Title";
+                    break;
+                case Context::ORDER_BY_SKILL_COUNT:
+                    $text.="ORDER BY (SELECT COUNT(*) FROM HenchpersonSpeciality WHERE HenchpersonSpeciality.HenchpersonId=Henchperson.Id)";
+                    break;
+            }
             $statement=$this->connection->prepare($text);
             $statement->execute();
             $result=$statement->fetchAll();
