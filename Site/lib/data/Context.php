@@ -1,10 +1,9 @@
 <?php
     include 'Models.php';
     class Context{
-        
-        public const HENCH_ORDER_BY_ID=1;
-        public const HENCH_ORDER_BY_TITLE=2;
-        public const HENCH_ORDER_BY_SKILL_COUNT=3;
+        const HENCH_ORDER_BY_ID=1;
+        const HENCH_ORDER_BY_TITLE=2;
+        const HENCH_ORDER_BY_SKILL_COUNT=3;
         private $connection;
         function __construct(){
             try {
@@ -45,6 +44,7 @@ WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id
             }
             return $return;
         }
+        
         /**
          * Returns a list of skills for a specified henchperson.
          */
@@ -80,10 +80,10 @@ WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id
                 case Context::HENCH_ORDER_BY_ID:
                     $text.="ORDER BY Henchperson.Id";
                     break;
-                case Context::ORDER_BY_TITLE:
+                case Context::HENCH_ORDER_BY_TITLE:
                     $text.="ORDER BY Henchperson.Title";
                     break;
-                case Context::ORDER_BY_SKILL_COUNT:
+                case Context::HENCH_ORDER_BY_SKILL_COUNT:
                     $text.="ORDER BY (SELECT COUNT(*) FROM HenchpersonSpeciality WHERE HenchpersonSpeciality.HenchpersonId=Henchperson.Id)";
                     break;
             }
