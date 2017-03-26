@@ -1,3 +1,22 @@
+#accordion section span {
+    display: none;
+    text-align: center;
+}
+
+#accordion section a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+            
+#accordion section a:hover {
+    text-decoration: underline;
+}
+            
+#accordion section:target span {
+    display: block;
+}
+
 .parentDiv
 {
     height:auto;
@@ -57,4 +76,8 @@ table {
 td.title {
     text-align: center;
     border: 1px solid black;
+}
+
+td.data {
+    text-align: center;
 }
