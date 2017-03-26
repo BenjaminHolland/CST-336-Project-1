@@ -1,0 +1,7 @@
+[26-Mar-2017 22:14:26 UTC] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 4
+[26-Mar-2017 22:14:55 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'ORDER_BY_TITLE' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:83
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(4): Context->getAvailableHenchpeople(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 83
+[26-Mar-2017 22:18:06 UTC] PHP Notice:  Undefined property: HenchpersonModel::$Title in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 7
