@@ -47,3 +47,14 @@ body {
 .center {
     text-align: center;
 }
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td.title {
+    text-align: center;
+    border: 1px solid black;
+}

@@ -1,5 +1,7 @@
 <?php
     session_start();
+    include 'lib/data/Context.php';
+    $context=new Context();
 ?>
 
 <html>
@@ -19,8 +21,10 @@
                     $_SESSION['output'] = "Output b";
                 }
             } else {
-                // DEFAULT SELECTS
-                $_SESSION['output'] = "Default";
+                // DEFAULT
+                $hench = $context->getAvailableHenchpeople();
+                var_dump($hench);
+                echo $hench[0];
             }
         ?>
         
@@ -44,8 +48,14 @@
                     <!--CONTENT-->
                     <div class = "contentContainer">
                         <div class = "content">
-                            Content...<br>
-                            <?php echo $_SESSION['output']; ?>
+                            <table>
+                                <tr>
+                                    <td class = "title">Name</td>
+                                    <td class = "title">Speciality</td>
+                                    <td class = "title">Description</td>
+                                    <td class = "title">Contract</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -57,4 +67,3 @@
         </form>
     </body>
 </html>
-test
