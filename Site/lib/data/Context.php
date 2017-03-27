@@ -42,7 +42,7 @@ SELECT Henchperson.Id AS Id,Henchperson.Title AS Name,Henchperson.Description AS
 FROM Contract
 JOIN Villian ON Contract.VillianId=Villian.Id
 JOIN Henchperson ON Contract.HenchpersonId=Henchperson.Id
-WHERE Contract.ContractStatusId=0 AND Contract.VillianId=:Id
+WHERE Contract.ContractStatusId=1 AND Contract.VillianId=:Id
 ";
 
             //Append an "ORDER BY " statement based on the requested order.
@@ -121,7 +121,7 @@ WHERE hs.HenchpersonId=:Id
             
             $statement=$this->connection->prepare($text);
             $statement->bindParam(":Id",$Id);
-            $statement->execute();
+            //$statement->execute();
             $return=[];
             foreach($statement->fetchAll() as $record){
                 array_push($return,$record["Description"]);
@@ -139,7 +139,7 @@ WHERE hs.HenchpersonId=:Id
 "
 SELECT *
 FROM Henchperson
-WHERE (SELECT COUNT(*) FROM Contract WHERE Contract.HenchpersonId=Henchperson.Id AND Contract.ContractStatusId=1)=0
+WHERE NOT EXISTS (SELECT * FROM Contract WHERE (Contract.HenchpersonId=Henchperson.Id AND Contract.ContractStatusId=1)); 
 ";
             switch($henchOrder){
                 case Context::HENCH_ORDER_BY_ID:

@@ -4,6 +4,12 @@ table{
     border-style: solid;
     margin:15px;
 }
+caption{
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    margin: 3px;
+}
 th,td{
     border-color: #000000;
     border-width: 1px;
