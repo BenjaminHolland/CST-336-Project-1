@@ -1,0 +1,75 @@
+[26-Mar-2017 00:00:49 UTC] PHP Warning:  include(Context.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:00:49 UTC] PHP Stack trace:
+[26-Mar-2017 00:00:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:00:49 UTC] PHP Warning:  include(): Failed opening 'Context.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:00:49 UTC] PHP Stack trace:
+[26-Mar-2017 00:00:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:00:49 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:00:49 UTC] PHP Stack trace:
+[26-Mar-2017 00:00:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:29 UTC] PHP Warning:  include(Context.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:29 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:29 UTC] PHP Warning:  include(): Failed opening 'Context.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:29 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:29 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:02:29 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:31 UTC] PHP Warning:  include(Context.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:31 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:31 UTC] PHP Warning:  include(): Failed opening 'Context.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:31 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:31 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:02:31 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Warning:  include(Context.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Warning:  include(): Failed opening 'Context.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Warning:  include(Context.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Warning:  include(): Failed opening 'Context.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 3
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:02:32 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:02:32 UTC] PHP Stack trace:
+[26-Mar-2017 00:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:03:20 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 24
+[26-Mar-2017 00:03:20 UTC] PHP Stack trace:
+[26-Mar-2017 00:03:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:11:57 UTC] PHP Fatal error:  Undefined class constant 'HENCH_ORDER_BY_ID' in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 26
+[26-Mar-2017 00:11:57 UTC] PHP Stack trace:
+[26-Mar-2017 00:11:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:32:28 UTC] PHP Fatal error:  Cannot use object of type HenchpersonModel as array in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 27
+[26-Mar-2017 00:32:28 UTC] PHP Stack trace:
+[26-Mar-2017 00:32:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 00:35:37 UTC] PHP Fatal error:  Call to undefined function getAvailableHenchpeople() in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 26
+[26-Mar-2017 00:35:37 UTC] PHP Stack trace:
+[26-Mar-2017 00:35:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 18:49:12 UTC] PHP Catchable fatal error:  Object of class HenchpersonModel could not be converted to string in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 27
+[26-Mar-2017 18:49:12 UTC] PHP Stack trace:
+[26-Mar-2017 18:49:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 22:40:33 UTC] PHP Warning:  Missing argument 1 for Context::getAvailableHenchpeople(), called in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 25 and defined in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/lib/data/Context.php on line 72
+[26-Mar-2017 22:40:33 UTC] PHP Stack trace:
+[26-Mar-2017 22:40:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 22:40:33 UTC] PHP   2. Context->getAvailableHenchpeople() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:25
+[26-Mar-2017 22:40:33 UTC] PHP Catchable fatal error:  Object of class HenchpersonModel could not be converted to string in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 27
+[26-Mar-2017 22:40:33 UTC] PHP Stack trace:
+[26-Mar-2017 22:40:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 22:40:45 UTC] PHP Warning:  Missing argument 1 for Context::getAvailableHenchpeople(), called in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 25 and defined in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/lib/data/Context.php on line 72
+[26-Mar-2017 22:40:45 UTC] PHP Stack trace:
+[26-Mar-2017 22:40:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0
+[26-Mar-2017 22:40:45 UTC] PHP   2. Context->getAvailableHenchpeople() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:25
+[26-Mar-2017 23:12:17 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 63
+[26-Mar-2017 23:39:38 UTC] PHP Fatal error:  Undefined class constant 'ORDER_BY_TITLE' in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php on line 19
+[26-Mar-2017 23:39:39 UTC] PHP Stack trace:
+[26-Mar-2017 23:39:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/store.php:0

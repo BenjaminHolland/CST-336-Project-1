@@ -5,6 +5,9 @@ Stack trace:
 #1 {main}
   thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 83
 [26-Mar-2017 22:18:06 UTC] PHP Notice:  Undefined property: HenchpersonModel::$Title in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 7
+[26-Mar-2017 22:46:44 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/testing/test.php on line 6
+[26-Mar-2017 22:46:44 UTC] PHP Stack trace:
+[26-Mar-2017 22:46:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/VillianProject/CST-336-Project-1/Site/testing/test.php:0
 [26-Mar-2017 23:12:55 UTC] PHP Parse error:  syntax error, unexpected '$henchpeople' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php on line 36
 [26-Mar-2017 23:13:41 UTC] PHP Fatal error:  Uncaught Error: Class 'VillianRecord' not found in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:98
 Stack trace:
