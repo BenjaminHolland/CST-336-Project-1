@@ -24,7 +24,7 @@
         
         function __construct(){
             try {
-                $this->connection=new PDO("mysql:dbname=VillianDb;host=127.0.0.1","abrawofham","");
+                $this->connection=new PDO("mysql:dbname=VillianDb;host=127.0.0.1","guest","");
                 
                 //Treat errors for this connection as PHP Exceptions.
                 $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
