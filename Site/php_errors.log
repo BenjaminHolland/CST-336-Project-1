@@ -69,3 +69,52 @@ Stack trace:
 [26-Mar-2017 23:28:08 UTC] PHP Notice:  Undefined variable: henchperson in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 80
 [26-Mar-2017 23:28:08 UTC] PHP Notice:  Undefined variable: henchperson in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 80
 [26-Mar-2017 23:28:50 UTC] PHP Notice:  Undefined variable: record in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 77
+[27-Mar-2017 00:16:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:124
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(124): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(161): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(44): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 124
+[27-Mar-2017 00:46:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:124
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(124): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(161): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 124
+[27-Mar-2017 00:47:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:124
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(124): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(161): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 124
+[27-Mar-2017 00:48:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:124
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(124): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(161): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 124
+[27-Mar-2017 00:50:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:125
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(125): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(162): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 125
+[27-Mar-2017 00:51:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:125
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(125): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(162): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 125
+[27-Mar-2017 00:53:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute. in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php:125
+Stack trace:
+#0 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(125): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php(163): Context->getSpecialitiesForHenchperson('0')
+#2 /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/testing/test.php(46): Context->getAvailableHenchpeople(1)
+#3 {main}
+  thrown in /home/ubuntu/workspace/Projects/CST-336-Project-1/Site/lib/data/Context.php on line 125

@@ -31,8 +31,7 @@
       </table>
    </div>
    
-   echo $henchpeople[0]->Specialities[0];
-?>
+
    <div class='TableContainer'>
       <table>
          <caption>Context::getAvailableHenchpeople() Test</caption>
