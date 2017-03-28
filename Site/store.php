@@ -15,8 +15,12 @@
                 if ($_POST['sort'] == "id") {
                     $henchpeople=$context->getAvailableHenchpeople(Context::HENCH_ORDER_BY_ID);
                 }
-                else if ($_POST['sort'] == "name") {
+                else if ($_POST['sort'] == "nameAZ") {
                     $henchpeople=$context->getAvailableHenchpeople(Context::HENCH_ORDER_BY_TITLE);
+                }
+                else if ($_POST['sort'] == "nameZA") {
+                    $henchpeople=$context->getAvailableHenchpeople(Context::HENCH_ORDER_BY_TITLE);
+                    $henchpeople = array_reverse($henchpeople);
                 }
                 else if ($_POST['sort'] == "skillCount") {
                     $henchpeople=$context->getAvailableHenchpeople(Context::HENCH_ORDER_BY_SKILL_COUNT);
@@ -63,10 +67,11 @@
                     <!--LEFT MENU-->
                     <div class = "sidebarContainer">
                         <div class = "sidebar">
-                            <b>Sort by</b><br>
-                            <input type="radio" name="sort" value="id">Henchmen ID<br>
-                            <input type="radio" name="sort" value="name">Henchmen Name<br>
-                            <input type="radio" name="sort" value="skillCount">Number of Skills<br><br>
+                            <b>Sort by Henchmen</b><br>
+                            <input type="radio" name="sort" value="id">ID<br>
+                            <input type="radio" name="sort" value="nameAZ">Name (A-Z)<br>
+                            <input type="radio" name="sort" value="nameZA">Name (Z-A)<br>
+                            <input type="radio" name="sort" value="skillCount">Skill Count<br><br>
                             
                             <div class = "center"><input type = "submit" value = "Sort"></div>
                         </div>
@@ -78,7 +83,7 @@
                                 <tr>
                                     <td class = "title">Name</td>
                                     <td class = "title">ID</td>
-                                    <td class = "title">Speciality</td>
+                                    <td class = "title">Specialities</td>
                                     <td class = "title">Description</td>
                                     <td class = "title">Contract</td>
                                 </tr>
@@ -123,7 +128,7 @@
                         <tr>
                             <td class = "title">Name</td>
                             <td class = "title">ID</td>
-                            <td class = "title">Speciality</td>
+                            <td class = "title">Specialities</td>
                             <td class = "title">Description</td>
                         </tr>
                         <?php
