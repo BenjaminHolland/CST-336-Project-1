@@ -81,3 +81,11 @@ td.title {
 td.data {
     text-align: center;
 }
+
+.padding {
+    padding: 10px;
+}
+
+tr {
+    border: 1px solid black;
+}
