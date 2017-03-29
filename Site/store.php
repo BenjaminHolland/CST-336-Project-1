@@ -151,8 +151,9 @@
                     </table>
                     <?php
                         if(sizeof($_SESSION['cart']) == 0)
-                            echo "<br><b>Empty</b>";
+                            echo "<br><b>Empty</b><br>";
                     ?>
+                    <br><a href="https://docs.google.com/document/d/1uPsfHmxxwGOsEv0ThDo_Y0xcd_LKcrOwX1amFRAGcOY/edit?usp=sharing" target="_blank">Villian Doc</a>
                     </div>
                 </div>
             </div>
